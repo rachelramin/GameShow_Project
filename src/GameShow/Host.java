@@ -25,50 +25,31 @@ public class Host
             return doors;
     }
 
-    public Door check_doors(int choice, ArrayList<Door> doors)
+    public int check_doors(int choice, ArrayList<Door> doors)
     {
-        if (doors.get(0).equals("GOAT"))
+        choice = choice - 1;
+        int i = 0;
+        while ( i < 3 )
         {
-            if(choice == 1)
+            if (doors.get(i).equals(new Goat()))
             {
-
+                if (choice == i)
+                {
+                   i++;
+                }
+                else
+                {
+                    return i;
+                }
             }
             else
             {
-                return doors.get(0);
+                i++;
             }
-
-
         }
 
-        if (doors.get(1).equals("GOAT"))
-        {
-            if(choice == 2)
-            {
+        return Integer.parseInt(null);
 
-            }
-            else
-            {
-                return doors.get(1);
-            }
-
-        }
-
-        if (doors.get(2).equals("GOAT"))
-        {
-            if(choice == 3)
-            {
-
-            }
-            else
-            {
-                return doors.get(2);
-            }
-
-        }
-
-
-        return null;
     }
 
 }
