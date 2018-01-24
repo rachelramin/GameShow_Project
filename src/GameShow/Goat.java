@@ -2,21 +2,21 @@ package GameShow;
 
 public class Goat
 {
-    protected boolean goat;
+    protected String goat = "GOAT";
 
 
     public Goat()
     {
-       this.goat = true;
+       this.goat = goat;
     }
 
-    public boolean isGoat()
+    public String isGoat()
     {
         return goat;
     }
 
-    public void setGoat(boolean goat)
+    public void setGoat()
     {
-        this.goat = goat;
+        this.goat = goat ;
     }
 }

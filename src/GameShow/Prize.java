@@ -2,19 +2,19 @@ package GameShow;
 
 public class Prize
 {
-    protected boolean prize;
+    protected String prize = "WINNER";
 
     public Prize()
     {
-        this.prize = true;
+        this.prize = prize;
     }
 
-    public boolean isPrize()
+    public String isPrize()
     {
         return prize;
     }
 
-    public void setPrize(boolean prize)
+    public void setPrize()
     {
         this.prize = prize;
     }
