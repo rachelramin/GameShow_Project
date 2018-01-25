@@ -9,7 +9,7 @@ public class Game
 {
 
 
-    public void main(String[] args)
+    public static void main(String[] args)
     {
         int choice;
         int choice2;
@@ -34,7 +34,7 @@ public class Game
 
         input = JOptionPane.showInputDialog("As it just so happens I will reveal the contents of Door #" + reveal +
                                              "\n" + goat + "\n" + "Well what do you know. Looks like you have " +
-                                            " 2 options left, door number 1 or door number 2." + "Will you change" +
+                                            " 2 options left, door number 1 or door number 2. " + "\nWill you change" +
                                             " your guess, or keep it?");
 
         choice2 = Integer.parseInt(input);

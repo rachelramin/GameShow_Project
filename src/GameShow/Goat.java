@@ -19,4 +19,10 @@ public class Goat
     {
         this.goat = goat ;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Goat";
+    }
 }

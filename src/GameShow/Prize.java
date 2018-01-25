@@ -18,4 +18,10 @@ public class Prize
     {
         this.prize = prize;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Prize";
+    }
 }

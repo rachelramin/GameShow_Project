@@ -31,7 +31,9 @@ public class Host
         int i = 0;
         while ( i < 3 )
         {
-            if (doors.get(i).equals(new Goat()))
+            Door door = doors.get(i);
+
+            if (door.toString().equalsIgnoreCase("Goat") )
             {
                 if (choice == i)
                 {
@@ -44,12 +46,11 @@ public class Host
             }
             else
             {
+                System.out.println(door.toString());
                 i++;
             }
         }
-
-        return Integer.parseInt(null);
-
+        return i;
     }
 
 }
